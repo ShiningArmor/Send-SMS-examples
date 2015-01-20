@@ -18,7 +18,7 @@ def handleSms(sms,asignado_a=1):
     cuenta = configuracionBPM.select().where(configuracionBPM.recibir_sms==1)
     print(u'== SMS message received ==\nFrom: {0}\nTime: {1}\nMessage:\n{2}\n'.format(sms.number, sms.time, sms.text))
     print('Replying to SMS...')
-    sms.reply(u'Verticall -> SMS recibido ... BPM id:'+ unicode(noti.id))
+    sms.reply(u'SMS recibido ...)
     print('SMS sent.\n')
 
 
